@@ -1,2 +1,2 @@
 # data_visualization
-this repository was created for comp 4433 data visualization class project 2
+This repository was created for comp 4433 data visualization class project 2
