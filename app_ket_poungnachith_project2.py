@@ -15,18 +15,18 @@ import dash_bootstrap_components as dbc
 import yfinance as yf
 import datetime
 
-# initialize the start and end dates for stock historical data
+# Initialize the start and end dates for stock historical data
 years = 10
 end = datetime.datetime.today()
 start = end - datetime.timedelta(days=years*365) # 10 years from today
 
-# pull data from yfinance
+# Pull data from yfinance
 VOOG = yf.download('VOOG', start=start, end=end)
 VOO = yf.download('VOO', start=start, end=end)
 VNQ = yf.download('VNQ', start=start, end=end)
 VGT = yf.download('VGT', start=start, end=end)
 
-# save data to csv files
+# Save data to csv files
 VOOG.to_csv('voog_historical_data.csv')
 VOO.to_csv('voo_historical_data.csv')
 VNQ.to_csv('vnq_historical_data.csv')
